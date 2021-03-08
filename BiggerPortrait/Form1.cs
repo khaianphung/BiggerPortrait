@@ -18,6 +18,8 @@ namespace BiggerPortrait
         public Form1()
         {
             InitializeComponent();
+            Rectangle desktopRect0 = GetDesktopBounds();
+            this.Size= new Size(desktopRect0.Width, desktopRect0.Height);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Opacity = 0.99;
             this.TopMost = true;
