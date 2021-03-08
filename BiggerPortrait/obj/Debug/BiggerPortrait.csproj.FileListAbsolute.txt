@@ -1,0 +1,8 @@
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\bin\Debug\BiggerPortrait.dll
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\bin\Debug\BiggerPortrait.pdb
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.csprojAssemblyReference.cache
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.csproj.CoreCompileInputs.cache
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.dll
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.pdb
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.Form1.resources
+C:\Users\khaia\source\repos\BiggerPortrait\BiggerPortrait\obj\Debug\BiggerPortrait.csproj.GenerateResource.cache
