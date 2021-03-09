@@ -28,10 +28,16 @@ namespace BiggerPortrait
             this.BackColor = Color.LimeGreen;
             this.TransparencyKey = Color.LimeGreen;
             this.BackgroundImageLayout = ImageLayout.Center;
-            //this.BackgroundImageLayout = ImageLayout.Stretch;
-            this.BackgroundImage = (Image)b;
-            //pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            //pictureBox1.Image = Image.FromFile("Gunther.png");
+
+            pictureBox1.BackColor = Color.LimeGreen;
+            //pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox1.Location = new Point(this.Bounds.Right * 545 / 1000, this.Bounds.Bottom * 390 / 1000);
+            pictureBox1.Size = new Size(this.Bounds.Right * 115 / 1000*3, this.Bounds.Bottom * 21 / 100*3);
+            pictureBox1.Image= (Image)b;
+           
+            //pictureBox1.Size = new Rectangle(this.Bounds.Right * 115 / 1000, this.Bounds.Bottom * 21 / 100);
+            //this.BackgroundImage = (Image)b;
+
 
         }
         [DllImport("user32.dll", SetLastError = true)]

@@ -3,6 +3,7 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using StardewValley.Menus;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -39,24 +40,25 @@ namespace BiggerPortrait
             if (!Context.IsWorldReady)
                 return;
 
-            
-            if (running == false && e.Button.ToString() == "H")
+            if (Game1.dialogueUp)
             {
-                //Application.Run(new BiggerPortrait.Form1());
+                if (running == false && e.Button.ToString() == "H")
+                {
+                    //Application.Run(new BiggerPortrait.Form1());
 
-                f1 = new Form1();
-                f1.Show();
-                running = true;
+                    f1 = new Form1();
+                    f1.Show();
+                    running = true;
+                }
+                else if (running == true && e.Button.ToString() == "H")
+                {
+                    //Application.Run(new BiggerPortrait.Form1());
+
+
+                    f1.Close();
+                    running = false;
+                }
             }
-            else if (running == true && e.Button.ToString() == "H")
-            {
-                //Application.Run(new BiggerPortrait.Form1());
-
-
-                f1.Close();
-                running = false ;
-            }
-
 
 
             // print button presses to the console window
@@ -69,5 +71,5 @@ namespace BiggerPortrait
 
 
 
-        }
+    }
 }
