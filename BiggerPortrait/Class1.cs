@@ -5,6 +5,7 @@ using StardewModdingAPI.Utilities;
 using StardewValley;
 using StardewValley.Menus;
 using System;
+using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -25,7 +26,7 @@ namespace BiggerPortrait
         {
 
 
-
+            
             helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
             
@@ -39,7 +40,7 @@ namespace BiggerPortrait
             
             f1 = new Form1();
             f1.emptyPictureBox();
-            f1.Show();
+            //f1.Show();
            
         }
 
@@ -51,13 +52,15 @@ namespace BiggerPortrait
         /// <param name="e">The event data.</param>
         /// 
         //was PRIVATE
+
+        
         public void OnButtonPressed(object sender, ButtonPressedEventArgs e)
         {
             // ignore if player hasn't loaded a save yet
             if (!Context.IsWorldReady)
                 return;
-
-            this.Monitor.Log($"{f1.Enabled} {f1.IsDisposed}.", LogLevel.Debug);
+            
+            
             if (Game1.dialogueUp && Game1.currentSpeaker!= null)
             {
 
