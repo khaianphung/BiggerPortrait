@@ -35,7 +35,7 @@ namespace BiggerPortrait
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1382, 561);
+            this.pictureBox1.Location = new System.Drawing.Point(1301, 193);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(295, 303);
             this.pictureBox1.TabIndex = 0;
