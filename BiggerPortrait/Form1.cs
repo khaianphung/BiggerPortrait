@@ -44,10 +44,10 @@ namespace BiggerPortrait
             //Bitmap b = CaptureApplication();
             pictureBox1.BackColor = Color.Transparent;
             //pictureBox1.Location = new Point((this.Width - b.Width) /2, (this.Height - b.Height) / 2);
-            
+            //resetPicture();
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             //pictureBox1.Image= (Image)b;
-            this.Show();
+            //this.Show();
 
             //System.Windows.Forms.Timer timer1 = new System.Windows.Forms.Timer();
             //timer1.Interval = 5000;//5 seconds
@@ -83,6 +83,7 @@ namespace BiggerPortrait
             if (Game1.dialogueUp && Game1.currentSpeaker != null)
             {
                 resetPicture();
+                //this.Show();
             }
         }
 
@@ -91,6 +92,7 @@ namespace BiggerPortrait
             if (Game1.dialogueUp && Game1.currentSpeaker != null)
             {
                 resetPicture();
+                //this.Show();
             }
         }
 
@@ -99,6 +101,7 @@ namespace BiggerPortrait
             if (Game1.dialogueUp && Game1.currentSpeaker != null)
             {
                 resetPicture();
+                //this.Show();
             }
         }
 

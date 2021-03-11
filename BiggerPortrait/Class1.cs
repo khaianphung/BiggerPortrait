@@ -39,7 +39,7 @@ namespace BiggerPortrait
             
             f1 = new Form1();
             f1.emptyPictureBox();
-            //f1.Show();
+            f1.Show();
            
         }
 
@@ -57,20 +57,27 @@ namespace BiggerPortrait
             if (!Context.IsWorldReady)
                 return;
 
-
+            this.Monitor.Log($"{f1.Enabled} {f1.IsDisposed}.", LogLevel.Debug);
             if (Game1.dialogueUp && Game1.currentSpeaker!= null)
             {
 
-                
 
 
 
+                this.Monitor.Log($"{f1.Enabled} {f1.IsDisposed}.", LogLevel.Debug);
                 if (running == true)
                 {
-                    f1.resetPicture();
+                    if (f1.IsDisposed)
+                    {
+                        f1 = new Form1();
+                        f1.emptyPictureBox();
+                        f1.Show();
+                    }
+                       f1.resetPicture();
+                    
                 }
 
-            this.Monitor.Log($"{Game1.player.Name} pressed {e.Button} { Game1.currentSpeaker.Name} {Game1.currentSpeaker.CurrentDialogue.Peek().CurrentEmotion} .", LogLevel.Debug);
+            //this.Monitor.Log($"{Game1.player.Name} pressed {e.Button} { Game1.currentSpeaker.Name} {Game1.currentSpeaker.CurrentDialogue.Peek().CurrentEmotion} .", LogLevel.Debug);
 
 
                 if (running == false && e.Button.ToString() == "H")
@@ -78,7 +85,7 @@ namespace BiggerPortrait
                     //Application.Run(new BiggerPortrait.Form1());
 
                     f1 = new Form1();
-                    //resetPortrait();
+                    f1.resetPicture();
                     f1.Show();
                     running = true;
                 }
